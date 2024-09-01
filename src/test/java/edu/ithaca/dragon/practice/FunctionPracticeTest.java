@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
+import edu.ithaca.dragon.shapes.Circle;
+
 public class FunctionPracticeTest {
 
     @Test
@@ -26,5 +28,6 @@ public class FunctionPracticeTest {
     public void calcSalePriceTest(){
         fail("Not implemented yet");
     }
+
     
 }

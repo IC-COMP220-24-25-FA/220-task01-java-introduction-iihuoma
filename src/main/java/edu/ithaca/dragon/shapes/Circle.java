@@ -12,10 +12,20 @@ public class Circle {
 
     /**
      * @return the area of this circle
+     * @throws Exception 
      */
-    public double calcArea(){
-        throw new RuntimeException("Not implemented yet");
-    }
+    public double calcArea() throws Exception{
+        
+        double circleArea = (Math.PI * this.radius * this.radius);
+            
+        return circleArea;
+        }
+        
+       
+       
+
+        //throw new RuntimeException("Not implemented yet");
+    
 
     /**
      * @post doubles the size of this circle

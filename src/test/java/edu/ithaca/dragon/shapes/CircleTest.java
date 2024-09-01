@@ -17,7 +17,7 @@ public class CircleTest {
     }
     
     @Test
-    public void calcAreaTest(){
+    public void calcAreaTest() throws Exception{
         Circle myCircle = new Circle(1);
         //3rd parameter says how far off it can be since it is a double
         assertEquals(3.1415, myCircle.calcArea(), 0.0001);
