@@ -17,7 +17,10 @@ public class Circle {
     public double calcArea() throws Exception{
         
         double circleArea = (Math.PI * this.radius * this.radius);
-            
+         
+        if (this.radius < 0){
+            throw new Exception("radius less than 0");
+        }
         return circleArea;
         }
         
