@@ -34,6 +34,13 @@ public class CircleTest {
         assertThrows(IllegalArgumentException.class, () -> new Circle(0));
     }
 
+    public static void main(String[] args) throws Exception {
+         CircleTest myTest = new CircleTest();
+         myTest.calcAreaTest();
+    }
+
+
+
 
     
 }

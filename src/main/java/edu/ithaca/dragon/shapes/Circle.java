@@ -1,13 +1,21 @@
 package edu.ithaca.dragon.shapes;
 
 public class Circle {
-    private double radius;
+    private double radius;{
+        
+    }
+        
+    
 
     /**
      * @throws IllegalArgumentException if radius is not a positive number
      */
     public Circle(double radius){
+        if (radius <= 0){
+            throw new IllegalArgumentException("radius is not a positive number");  
+    }
         this.radius = radius;
+        
     }
 
     /**
@@ -17,12 +25,10 @@ public class Circle {
     public double calcArea() throws Exception{
         
         double circleArea = (Math.PI * this.radius * this.radius);
-         
-        if (this.radius < 0){
-            throw new Exception("radius less than 0");
-        }
         return circleArea;
-        }
+    }
+         
+        
         
        
        
@@ -43,4 +49,5 @@ public class Circle {
     public double longestLineWithin(){
         throw new RuntimeException("Not implemented yet");
     }
+    
 }
