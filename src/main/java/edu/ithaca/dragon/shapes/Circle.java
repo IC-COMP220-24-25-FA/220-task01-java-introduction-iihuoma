@@ -47,7 +47,10 @@ public class Circle {
      * @return the longest straight line that can be drawn within this circle
      */
     public double longestLineWithin(){
-        throw new RuntimeException("Not implemented yet");
+       //double theDiamater = radius * 2;
+       //return theDiamater;
+
+        //throw new RuntimeException("Not implemented yet");
     }
     
 }
