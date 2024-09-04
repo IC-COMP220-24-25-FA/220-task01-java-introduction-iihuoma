@@ -42,8 +42,8 @@ public class CircleTest {
         assertEquals(20.66, myCircle.longestLineWithin(),0.01);
 
         myCircle = new Circle(14.763);
-        assertEquals(29.529, myCircle.longestLineWithin(),0.001);
-        
+        assertEquals(29.526, myCircle.longestLineWithin(),0.001);
+
     }
 
     public static void main(String[] args) throws Exception {
