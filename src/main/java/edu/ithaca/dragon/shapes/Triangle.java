@@ -29,11 +29,17 @@ public class Triangle {
     }
 
     public void doubleSize(){
+        base = base * 2; 
+        height = height * 2;
+
         
     }
 
     public double longestLineWithin(){
-        throw new IllegalArgumentException ("not implemented yest");
+        double lineWithin = (base * base) + (height *height);
+        return Math.sqrt(lineWithin);
+        
+        //throw new IllegalArgumentException ("not implemented yest");
 
     }
 
