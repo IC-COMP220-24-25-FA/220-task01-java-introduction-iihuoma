@@ -2,6 +2,7 @@ package edu.ithaca.dragon.shapes;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 
 
@@ -21,8 +22,20 @@ public class ShapeMain {
         allRectangles.add(new Rectangle(12, 9));
         allRectangles.add(new Rectangle(37,46));
         
-        for (int i=0, i < allRectangles.size(); i++){
-            System.out.println(allRectangles.get(i.calcArea()));
+        for (int i = 1; i <= 5; ++i){
+            Scanner myObj = new Scanner(System.in);
+            System.out.println("Enter number 0-4");
+            int number = myObj.nextInt();
+            allRectangles.get(number).doubleSize();
+            for (int j=0; j < allRectangles.size(); j++){
+                System.out.println("Rectangle " + j + " LongestLine:" + allRectangles.get(j).longestLineWithin());
+                System.out.println("Rectangle " + j + " area:" + allRectangles.get(j).calcArea());
+
+                
+            }
+
+        }
+        
         }
     }
-}
+
