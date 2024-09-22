@@ -40,6 +40,14 @@ public class FunctionPracticeTest {
         //fail("Not implemented yet");
     }
 
+    @Test
+    public void isGoodDogTest(){
+        assertEquals(true, FunctionPractice.isGoodDog(4, 8, true));
+        assertEquals(false, FunctionPractice.isGoodDog(5, 0, true));
+        assertEquals(true, FunctionPractice.isGoodDog(5, 3, true));
+
+    }
+
     
 
     
