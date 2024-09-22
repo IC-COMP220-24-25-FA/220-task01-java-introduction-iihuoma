@@ -8,6 +8,9 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import edu.ithaca.dragon.shapes.Circle;
 
 public class FunctionPracticeTest {
@@ -47,6 +50,28 @@ public class FunctionPracticeTest {
         assertEquals(true, FunctionPractice.isGoodDog(5, 3, true));
 
     }
+
+    @Test
+    public void findFirstLargest(){
+        List<Integer>numbers;
+        numbers = new ArrayList<Integer>();
+        numbers.add(6);
+        numbers.add(35);
+        numbers.add(12);
+        numbers.add(35);
+        assertEquals(1, FunctionPractice.findFirstLargest(numbers));
+        List<Integer>oneNumbers;
+        oneNumbers = new ArrayList<Integer>();
+        oneNumbers.add(187);
+        oneNumbers.add(187);
+        assertEquals(0, FunctionPractice.findFirstLargest(oneNumbers));
+        List<Integer>twoNumbers;
+        twoNumbers = new ArrayList<Integer>();
+        assertEquals(-1, FunctionPractice.findFirstLargest(twoNumbers));
+
+    }
+
+    
 
     
 
