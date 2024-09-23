@@ -91,6 +91,28 @@ public class FunctionPracticeTest {
 
     }
 
+    @Test
+    public void findFirstMostOccurencesOfLetterTest(){
+        List<String>words;
+        words = new ArrayList<String>();
+        words.add("hello");
+        words.add("limp");
+        words.add("sheep");
+        words.add("help");
+        assertEquals("hello", FunctionPractice.findFirstMostOccurencesOfLetter(words,'l'));
+        List<String>moreWords;
+        moreWords = new ArrayList<String>();
+        moreWords.add("need");
+        moreWords.add("necessary");
+        moreWords.add("keepsake")
+        assertEquals("keepsake", FunctionPractice.findFirstMostOccurencesOfLetter(moreWords,'e'));
+        List<String>newWords;
+        newWords = new ArrayList<String>();
+
+        assertThrows(IllegalArgumentException.class, () -> FunctionPractice.findFirstMostOccurencesOfLetter(newWords,'j'));
+    }
+
+
     
 
     
