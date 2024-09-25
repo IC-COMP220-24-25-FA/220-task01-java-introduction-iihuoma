@@ -104,7 +104,7 @@ public class FunctionPracticeTest {
         moreWords = new ArrayList<String>();
         moreWords.add("need");
         moreWords.add("necessary");
-        moreWords.add("keepsake")
+        moreWords.add("keepsake");
         assertEquals("keepsake", FunctionPractice.findFirstMostOccurencesOfLetter(moreWords,'e'));
         List<String>newWords;
         newWords = new ArrayList<String>();
