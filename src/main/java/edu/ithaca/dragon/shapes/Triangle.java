@@ -42,6 +42,15 @@ public class Triangle {
         //throw new IllegalArgumentException ("not implemented yest");
 
     }
+    
+    public String toString(){
+        //return "Trinagle" + "base=" + base + '\'' + ",height=" + height;
+        return "Triangle:" + "base=' " + base + '\'' + ", height=' " + height;
+
+    
+
+
+    }
 
 }
 
