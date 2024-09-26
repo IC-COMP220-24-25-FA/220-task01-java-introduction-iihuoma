@@ -17,7 +17,7 @@ public class CircleTest {
     }
     
     @Test
-    public void calcAreaTest(){
+    public void calcAreaTest() throws Exception{
         Circle myCircle = new Circle(1);
         //3rd parameter says how far off it can be since it is a double
         assertEquals(3.1415, myCircle.calcArea(), 0.0001);
@@ -33,7 +33,26 @@ public class CircleTest {
     public void TestConstructorError(){
         assertThrows(IllegalArgumentException.class, () -> new Circle(0));
     }
+    @Test
+    public void longestLineWithinTest (){
+        Circle myCircle = new Circle(8.6);
+        assertEquals(17.2, myCircle.longestLineWithin(), 0.1);
+
+        myCircle=new Circle(10.33);
+        assertEquals(20.66, myCircle.longestLineWithin(),0.01);
+
+        myCircle = new Circle(14.763);
+        assertEquals(29.526, myCircle.longestLineWithin(),0.001);
+
+    }
+
+
+
+    }
+    
+
+
 
 
     
-}
+
